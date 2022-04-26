@@ -39,11 +39,12 @@ function onFormSubmit(event) {
 
     if (email === '' || password === '') {
         alert('Будь ласка, заповніть всі поля!!!!');
-    };
-   if (email !== '' || password !== '') {
+            };
+   if (email !== '' && password !== '') {
        console.log(onFormDate);
+        event.currentTarget.reset();
     };
-    event.currentTarget.reset();
+   
 }
 
 
